@@ -36,5 +36,7 @@
 		"vite": "^4.0.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"svelte-select": "^5.2.1"
+	}
 }
