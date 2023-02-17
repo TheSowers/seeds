@@ -16,10 +16,11 @@
 		<Heading tag="h1" color="text-white">막차 몇시 ?</Heading>
 	</div>
 
-	<form class="w-full px-4">
+	<form class="w-full px-4" method="POST" action="/last-time">
 		<div class="py-6 w-full mb-4 flex flex-col gap-7">
 			<Select
 				{items}
+				name="departure"
 				placeholder="출발역 (2호선만 가능해요)"
 				class="h-14 !text-gray-900 !bg-gray-50 !border-gray-300"
 				inputStyles="--tw-ring-color: transparent;"
@@ -48,6 +49,7 @@
 			</Select>
 			<Select
 				{items}
+				name="arrival"
 				placeholder="도착역"
 				class="h-14 !text-gray-900 !bg-gray-50 !border-gray-300"
 				inputStyles="--tw-ring-color: transparent;"
