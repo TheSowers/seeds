@@ -1,5 +1,5 @@
 import { redirect } from '@sveltejs/kit';
-import type { Actions } from './$types';
+import type { Actions, PageServerLoad } from './$types';
 
 type station = {
 	name: string;
@@ -79,17 +79,15 @@ const getResult = (departure: string, arrival: string): result => {
 	return test;
 };
 
-export const actions = {
-	default: async ({ request }) => {
-		const data = await request.formData();
-		const departure = data.get('departure');
-		const arrival = data.get('arrival');
+export const load = (async ({ url: { searchParams } }) => {
+	const departure = searchParams.get('departure');
+	const arrival = searchParams.get('arrival');
 
-		if (!departure || !arrival) {
-			throw redirect(303, '/');
-		}
-
-		const result = getResult(departure as string, arrival as string);
-		return { data: result };
+	if (!departure || !arrival || departure == '' || arrival == '') {
+		throw redirect(302, '/');
 	}
-} satisfies Actions;
+
+	const result = getResult(departure as string, arrival as string);
+
+	return result;
+}) satisfies PageServerLoad;
