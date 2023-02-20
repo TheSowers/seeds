@@ -55,12 +55,12 @@
 
 			<div slot="item" let:item>
 				{item.label}
-				<span class="rounded-full bg-[#00A84D] text-white px-1 text-sm align-text-top">2</span>
+				<span class="rounded-full bg-train-2 text-white px-1 text-sm align-text-top">2</span>
 			</div>
 
 			<div slot="selection" let:selection>
 				{selection.label}
-				<span class="rounded-full bg-[#00A84D] text-white px-1 text-sm align-text-top">2</span>
+				<span class="rounded-full bg-train-2 text-white px-1 text-sm align-text-top">2</span>
 			</div>
 		</Select>
 		<Select
@@ -85,12 +85,12 @@
 
 			<div slot="item" let:item>
 				{item.label}
-				<span class="rounded-full bg-[#00A84D] text-white px-1 text-sm align-text-top">2</span>
+				<span class="rounded-full bg-train-2 text-white px-1 text-sm align-text-top">2</span>
 			</div>
 
 			<div slot="selection" let:selection>
 				{selection.label}
-				<span class="rounded-full bg-[#00A84D] text-white px-1 text-sm align-text-top">2</span>
+				<span class="rounded-full bg-train-2 text-white px-1 text-sm align-text-top">2</span>
 			</div>
 		</Select>
 	</div>
