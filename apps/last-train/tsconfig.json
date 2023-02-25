@@ -24,8 +24,7 @@
 		"src/**/*.ts",
 		"src/**/*.svelte",
 		"lib/**/*.ts",
-		"lib/**/*.js",
-		"lib/**/*.cjs"
+		"lib/**/*.js"
 	]
 
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
