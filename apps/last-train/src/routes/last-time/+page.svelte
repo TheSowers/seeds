@@ -49,3 +49,5 @@
 		</div>
 	</div>
 </div>
+
+<div id="disqus_thread" class="w-full h-96 mt-10" />
