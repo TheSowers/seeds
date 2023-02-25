@@ -13,11 +13,19 @@
 		"paths": {
 			"$lib": ["src/lib"],
 			"$lib/*": ["src/lib/*"],
+			"$assets/*": ["src/assets/*"],
 			"$components/*": ["src/components/*"]
 		}
 	},
 	"exclude": ["node_modules"],
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": [
+		"src/**/*.d.ts",
+		"src/**/*.js",
+		"src/**/*.ts",
+		"src/**/*.svelte",
+		"lib/**/*.ts",
+		"lib/**/*.js"
+	]
 
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
