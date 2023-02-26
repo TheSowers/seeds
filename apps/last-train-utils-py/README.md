@@ -1,7 +1,5 @@
 # last-train utility
 
-
-
 **create_tables.py**
 
 **create_time_table.py**

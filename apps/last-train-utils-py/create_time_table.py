@@ -154,7 +154,7 @@ def insert_time_table_to_db(station_id_from_db, station_code, way_code):
 
 
 def main():
-    # insert_station_info_into_db()
+    insert_station_info_into_db()
     station_info_list = get_station_info_list_from_db()
 
     for station_info in station_info_list:
