@@ -37,5 +37,8 @@
 		"vite": "^4.0.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"date-fns": "^2.29.3",
+		"svelte-select": "^5.2.1"
+	}
 }
