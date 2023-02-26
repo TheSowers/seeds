@@ -37,9 +37,5 @@
 		"vite": "^4.0.0"
 	},
 	"type": "module",
-	"dependencies": {
-		"better-sqlite3": "^8.1.0",
-		"knex": "^2.4.2",
-		"path": "^0.12.7"
-	}
+	"dependencies": {}
 }
