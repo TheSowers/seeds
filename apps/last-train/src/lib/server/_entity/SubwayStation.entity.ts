@@ -1,6 +1,6 @@
-export interface Subway {
+export interface SubwayStation {
     id: number;
     line: string;
     name: string;
-    destination: string;
+    code: string;
 }
